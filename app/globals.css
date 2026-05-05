@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Headings use next/font CSS variables below. Do not @apply Tailwind font-* utilities here — PostCSS can fail to resolve them. */
+
+@layer base {
+  /* Montserrat / Inter vars from layout.tsx (next/font) */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat), var(--font-inter), system-ui, sans-serif;
+  }
+}
+
+html,
+body {
+  background: #f4f8fc;
+  color: #1f2937;
+}
+
+.prose :where(h1, h2, h3, h4) {
+  color: #1b3f73;
+}
+
+.glass {
+  background: rgba(244, 248, 252, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.hero-business-bg {
+  background-image: url("/images/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pulse-soft {
+  animation: pulse-soft 2s infinite;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(47, 142, 219, 0.45);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 12px rgba(47, 142, 219, 0);
+  }
+}
