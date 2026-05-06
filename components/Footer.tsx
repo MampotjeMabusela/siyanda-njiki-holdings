@@ -39,14 +39,19 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <h5 className="font-semibold">Socials</h5>
           <div className="mt-3 flex items-center justify-center gap-3 text-xl">
-            <a href="#">
-              <FaFacebook />
+            <a
+              href="https://web.facebook.com/syandanjikiholdings/?_rdc=1&_rdr#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Syanda Njiki Holdings on Facebook"
+            >
+              <FaFacebook aria-hidden />
             </a>
-            <a href="#">
-              <FaLinkedin />
+            <a href="#" aria-label="LinkedIn (link coming soon)">
+              <FaLinkedin aria-hidden />
             </a>
-            <a href="#">
-              <FaInstagram />
+            <a href="#" aria-label="Instagram (link coming soon)">
+              <FaInstagram aria-hidden />
             </a>
           </div>
         </div>
