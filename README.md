@@ -1,36 +1,248 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Siyanda Njiki Holdings Website
 
-## Getting Started
+Official marketing website for **Siyanda Njiki Holdings (PTY) LTD** built with Next.js (App Router), Tailwind CSS, and TypeScript.
 
-First, run the development server:
+This README explains:
+- how to run the project
+- how to build and deploy it
+- how to fix the Tailwind/CSS/Node issues that occurred before
+
+---
+
+## 1) Tech Stack
+
+- Next.js `14.2.5` (App Router)
+- React `18`
+- Tailwind CSS `3`
+- TypeScript
+- react-hook-form + zod
+- nodemailer (contact API email)
+
+---
+
+## 2) Project Structure
+
+- `app/` — pages, layout, global styles, API routes
+- `components/` — reusable UI components
+- `lib/` — helper utilities
+- `posts/` — markdown blog articles
+- `public/images/` — all site image assets
+- `tailwind.config.js` — Tailwind config
+- `postcss.config.js` — Tailwind/PostCSS pipeline
+- `next.config.mjs` — Next config (includes dev cache stability fix)
+
+---
+
+## 3) Prerequisites
+
+- Node.js `>= 18` (Node 20+ recommended)
+- npm `>= 9`
+- Windows/macOS/Linux supported
+
+Check versions:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+## 4) Install
+
+From the `snh-site` folder:
+
+```bash
+npm install
+```
+
+---
+
+## 5) Run in Development
+
+From `snh-site`:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`http://127.0.0.1:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Why this dev script is special
 
-## Learn More
+`npm run dev` is intentionally configured to prevent the previous failures:
 
-To learn more about Next.js, take a look at the following resources:
+1. `npm run clean` → deletes `.next` cache
+2. `npm run free-port` → frees port `3000` if occupied
+3. starts Next dev server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This avoids:
+- `EADDRINUSE` errors
+- stale chunk/CSS cache issues after refresh
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 6) Production Build (required before deploy)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+From `snh-site`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm run build
+```
+
+If successful, start production server:
+
+```bash
+npm run start
+```
+
+Then open:
+
+`http://127.0.0.1:3000`
+
+---
+
+## 7) Environment Variables
+
+Create `.env.local` in `snh-site` (do not commit secrets):
+
+```env
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+EMAIL_USER=your-gmail-address@gmail.com
+EMAIL_PASS=your-app-password
+```
+
+Notes:
+- `EMAIL_USER` + `EMAIL_PASS` are used by `app/api/contact/route.ts` for email sending.
+- If email credentials are missing, the contact flow still returns WhatsApp link fallback.
+- `NEXT_PUBLIC_SITE_URL` is used for metadata base URLs in production.
+
+---
+
+## 8) Deployment Checklist
+
+Run all of these before deploying:
+
+1. `npm install`
+2. `npm run build`
+3. Ensure env vars are set on hosting platform:
+   - `NEXT_PUBLIC_SITE_URL`
+   - `EMAIL_USER`
+   - `EMAIL_PASS`
+4. Verify critical routes:
+   - `/`
+   - `/services`
+   - `/portfolio`
+   - `/blog`
+   - `/contact`
+   - `/robots.txt`
+   - `/sitemap.xml`
+
+---
+
+## 9) Tailwind/CSS/Node Troubleshooting (Important)
+
+This section addresses the exact historical issues.
+
+### A) Error: `EADDRINUSE: address already in use 127.0.0.1:3000`
+
+Cause: port `3000` already used by another Node process.
+
+Fix:
+- Just run `npm run dev` (it already runs `kill-port 3000`).
+- If needed manually:
+  ```bash
+  npx kill-port 3000
+  npm run dev
+  ```
+
+---
+
+### B) Tailwind/CSS appears inactive or page looks unstyled
+
+Common cause: stale `.next` artifacts or wrong Tailwind content resolution.
+
+Project protections already in place:
+- Tailwind uses:
+  - `content.relative: true`
+  - `files: ["./app/**", "./components/**", "./lib/**"]`
+- Dev script always cleans `.next` before start.
+
+Manual recovery:
+
+```bash
+npm run clean
+npm run dev
+```
+
+Then hard refresh browser: `Ctrl + Shift + R`.
+
+---
+
+### C) Error on refresh: `missing required error components, refreshing...`
+
+Cause seen before: dev cache/chunk instability on Windows + OneDrive + hot reload.
+
+Project protections already in place:
+- `app/error.tsx` exists
+- `app/global-error.tsx` exists
+- `next.config.mjs` sets webpack dev cache to memory:
+  - avoids filesystem cache corruption/missing chunk behavior
+
+If this appears again:
+
+```bash
+npm run clean
+npm run dev
+```
+
+---
+
+### D) Build passes but browser still shows old/broken style
+
+Fix:
+1. Stop dev server
+2. `npm run clean`
+3. `npm run dev`
+4. hard refresh browser
+
+---
+
+## 10) Useful Scripts
+
+- `npm run dev` — clean + free port + start dev
+- `npm run clean` — delete `.next`
+- `npm run build` — production build
+- `npm run start` — run production build
+- `npm run lint` — lint checks
+- `npm run verify` — same as build
+
+---
+
+## 11) Git Notes
+
+If your branch includes the approved baseline tag:
+- `baseline-as-approved`
+
+You can inspect it with:
+
+```bash
+git tag -l
+git checkout baseline-as-approved
+```
+
+---
+
+## 12) Support Handoff
+
+If someone else receives this code folder:
+
+1. Install Node + npm
+2. Open terminal in `snh-site`
+3. Run `npm install`
+4. Run `npm run dev`
+5. If any styling/refresh issue appears, follow Section 9 exactly
+
+This setup has already been hardened for the previous Tailwind/CSS/Node failures.
