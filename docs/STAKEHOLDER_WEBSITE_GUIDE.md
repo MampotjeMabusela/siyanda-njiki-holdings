@@ -1,4 +1,4 @@
-# Siyanda Njiki Holdings — Website guide for stakeholders
+# Syanda Njiki Holdings — Website guide for stakeholders
 
 This document explains the public marketing website: what each page is for, what visitors can click, and how enquiries reach the business. **Add your own screenshots** where the placeholders appear (replace the image paths or paste images into your final PDF or presentation).
 
@@ -6,7 +6,7 @@ This document explains the public marketing website: what each page is for, what
 
 ## 1. Purpose of the site
 
-The website introduces **Siyanda Njiki Holdings (PTY) LTD (SNH)** as a multi-disciplinary contractor and supplier: electrical, civil, plumbing, procurement, transport, and solar-related messaging. It supports three practical goals:
+The website introduces **Syanda Njiki Holdings (PTY) LTD (SNH)** as a multi-disciplinary contractor and supplier: electrical, civil, plumbing, procurement, transport, and solar-related messaging. It supports three practical goals:
 
 1. **Credibility** — company story, services, portfolio imagery, blog articles, and partner logos.  
 2. **Lead generation** — “Get a Quote”, contact form, and WhatsApp entry points.  
@@ -45,7 +45,7 @@ These elements appear on **all** main pages.
 | **Quick links** | Shortcuts to **About**, **Services**, and **Blog**. |
 | **Contact** | Phone **+27 79 221 9330** and email **info.thegembeselectrical@gmail.com** (display only; not a form). |
 | **Socials** | Icons for Facebook, LinkedIn, and Instagram (currently placeholder links `#` — replace with real URLs when ready). |
-| **Copyright line** | Year and legal line for Siyanda Njiki Holdings (PTY) LTD. |
+| **Copyright line** | Year and legal line for Syanda Njiki Holdings (PTY) LTD. |
 
 **Screenshot placeholder — footer:**
 

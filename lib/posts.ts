@@ -33,7 +33,7 @@ export function getAllPosts(): Post[] {
       date: data.date,
       tags: data.tags ?? [],
       image: data.image,
-      author: data.author ?? "Siyanda Njiki Holdings",
+      author: data.author ?? "Syanda Njiki Holdings",
       content,
       readingTime: readingTime(content).text,
     } as Post;

@@ -4,7 +4,7 @@ excerpt: "How modern civil work combines quality, speed, and long-term durabilit
 date: "2026-02-18"
 tags: ["construction trends", "civil work", "quality"]
 image: "/images/blog-civil-construction.png"
-author: "Siyanda Njiki Holdings"
+author: "Syanda Njiki Holdings"
 ---
 # Construction Trends
 

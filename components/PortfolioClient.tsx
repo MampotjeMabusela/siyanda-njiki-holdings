@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import PortfolioModal from "./PortfolioModal";
 
@@ -37,7 +38,7 @@ export default function PortfolioClient() {
     <main className="mx-auto max-w-7xl px-4 py-16 text-center">
       <h1 className="text-4xl font-bold text-primary">Portfolio</h1>
       <div className="mt-6 flex flex-wrap items-center justify-center gap-2">{["All", "Electrical", "Civil", "Supply", "Transport"].map((f) => <button key={f} onClick={() => setFilter(f)} className={`rounded-full px-4 py-2 text-sm ${f === filter ? "bg-primary text-white" : "bg-white ring-1 ring-slate-200"}`}>{f}</button>)}</div>
-      <div className="mt-8 grid gap-5 md:grid-cols-3">{filtered.map((project) => <button key={project.id} onClick={() => setSelected(project)} className="group relative overflow-hidden rounded-xl text-left"><img src={project.image} alt={project.title} className="h-56 w-full object-cover transition duration-300 group-hover:scale-105" /><span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold">{project.category}</span><div className="absolute inset-0 grid place-items-center bg-slate-900/40 opacity-0 transition group-hover:opacity-100"><span className="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white">View Project</span></div></button>)}</div>
+      <div className="mt-8 grid gap-5 md:grid-cols-3">{filtered.map((project) => <button key={project.id} onClick={() => setSelected(project)} className="group relative overflow-hidden rounded-xl text-left"><Image src={project.image} alt={project.title} width={600} height={224} className="h-56 w-full object-cover transition duration-300 group-hover:scale-105" /><span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold">{project.category}</span><div className="absolute inset-0 grid place-items-center bg-slate-900/40 opacity-0 transition group-hover:opacity-100"><span className="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white">View Project</span></div></button>)}</div>
       <PortfolioModal project={selected} onClose={() => setSelected(null)} />
     </main>
   );

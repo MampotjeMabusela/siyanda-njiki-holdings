@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ValueCard from "@/components/ValueCard";
 
 export const metadata: Metadata = {
-  title: "About | Siyanda Njiki Holdings",
-  description: "Learn about Siyanda Njiki Holdings mission, vision and core values.",
+  title: "About | Syanda Njiki Holdings",
+  description: "Learn about Syanda Njiki Holdings mission, vision and core values.",
 };
 
 export default function AboutPage() {
@@ -12,7 +12,7 @@ export default function AboutPage() {
       <h1 className="text-4xl font-bold text-primary">About Us</h1>
       <div className="mx-auto mt-5 max-w-4xl space-y-4 text-center text-slate-600">
         <p>
-          Siyanda Njiki Holdings (PTY) LTD is a multi-disciplinary company that specializes in supply, construction, and transportation services. Established with a vision to provide efficient, reliable, and high-quality solutions, we have built a reputation for excellence and professionalism.
+          Syanda Njiki Holdings (PTY) LTD is a multi-disciplinary company that specializes in supply, construction, and transportation services. Established with a vision to provide efficient, reliable, and high-quality solutions, we have built a reputation for excellence and professionalism.
         </p>
         <p>
           Our company prides itself on a strong work ethic, integrity, and a customer-centric approach that ensures we meet the unique needs of our clients across multiple industries.

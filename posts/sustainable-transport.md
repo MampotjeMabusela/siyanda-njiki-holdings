@@ -4,7 +4,7 @@ excerpt: "Practical transport improvements that reduce risk and improve reliabil
 date: "2025-12-14"
 tags: ["sustainable transport", "logistics", "fleet"]
 image: "/images/blog-sustainable-transport.png"
-author: "Siyanda Njiki Holdings"
+author: "Syanda Njiki Holdings"
 ---
 # Sustainable Transport
 

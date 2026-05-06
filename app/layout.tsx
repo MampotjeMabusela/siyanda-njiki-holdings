@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 
 export const metadata: Metadata = {
-  title: "Siyanda Njiki Holdings (PTY) LTD",
+  title: "Syanda Njiki Holdings (PTY) LTD",
   description: "Building Tomorrow, Delivering Today",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
 };

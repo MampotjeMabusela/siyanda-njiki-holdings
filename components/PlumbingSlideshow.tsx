@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
@@ -39,10 +40,12 @@ export default function PlumbingSlideshow() {
           <FaChevronLeft className="text-xs" aria-hidden />
         </button>
         <div className="min-w-0">
-          <img
+          <Image
             key={images[current]}
             src={images[current]}
             alt={`Plumbing project ${current + 1} of ${images.length}`}
+            width={1200}
+            height={900}
             className="mx-auto block h-auto w-full max-w-full object-contain"
           />
         </div>

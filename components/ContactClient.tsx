@@ -65,7 +65,7 @@ export default function ContactClient() {
           <p className="text-sm">+27 79 221 9330</p>
           <p className="text-sm">info.thegembeselectrical@gmail.com</p>
           <iframe
-            title="Siyanda location"
+            title="Syanda location"
             className="mt-4 h-72 w-full rounded-lg border-0"
             loading="lazy"
             src="https://maps.google.com/maps?q=220%20Tambo%20Village%2C%20Bethal%2C%20Mpumalanga%2C%202309&t=&z=13&ie=UTF8&iwloc=&output=embed"

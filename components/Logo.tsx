@@ -6,7 +6,7 @@ export default function Logo() {
     <Link href="/" className="mx-auto inline-flex items-center justify-center">
       <Image
         src="/images/snh-logo.png"
-        alt="Siyanda Njiki Holdings logo"
+        alt="Syanda Njiki Holdings logo"
         width={560}
         height={160}
         priority

@@ -8,7 +8,7 @@ import CivilSlideshow from "@/components/CivilSlideshow";
 import PlumbingSlideshow from "@/components/PlumbingSlideshow";
 
 export const metadata: Metadata = {
-  title: "Home | Siyanda Njiki Holdings",
+  title: "Home | Syanda Njiki Holdings",
   description: "Building Tomorrow, Delivering Today - supply, construction and transport services.",
 };
 
@@ -55,7 +55,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-slate-900/45" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 py-14 text-center sm:py-16 md:py-24">
           <h1 className="mx-auto text-3xl font-extrabold tracking-tight text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.65)] sm:text-4xl md:text-6xl">
-            Siyanda Njiki Holdings (PTY) LTD
+            Syanda Njiki Holdings (PTY) LTD
           </h1>
           <p className="mt-3 text-sm font-semibold uppercase tracking-[0.12em] text-slate-100 drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)] sm:text-base md:text-lg md:tracking-[0.2em]">
             SNH • Building Tomorrow, Delivering Today
@@ -67,7 +67,7 @@ export default function HomePage() {
             Reliable supply, construction and transport services with proven professionalism.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base text-slate-100 drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)] md:text-lg">
-            Siyanda Njiki Holdings delivers efficient, high-quality, and customer-centric solutions across electrical,
+            Syanda Njiki Holdings delivers efficient, high-quality, and customer-centric solutions across electrical,
             civil, plumbing, supply, transport and solar — from maintenance to full project support.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

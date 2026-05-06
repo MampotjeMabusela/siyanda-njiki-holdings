@@ -11,7 +11,7 @@ export type LeadPayload = {
 
 export function buildLeadWhatsAppUrl(data: LeadPayload): string {
   const text = [
-    "*New enquiry — Siyanda Njiki Holdings*",
+    "*New enquiry — Syanda Njiki Holdings*",
     "",
     `Name: ${data.fullName}`,
     `Email: ${data.email}`,

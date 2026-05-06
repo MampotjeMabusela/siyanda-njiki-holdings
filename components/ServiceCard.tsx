@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type ServicePoint = { title: string; description: string };
 type Props = {
   title: string;
@@ -15,9 +17,11 @@ export default function ServiceCard({ title, points, imageSrc, imageAlt = "Servi
     <article className="rounded-2xl bg-white p-4 text-center shadow-sm ring-1 ring-slate-200 sm:p-6">
       <h3 className="text-xl font-semibold text-primary">{title}</h3>
       {imageSrc && (
-        <img
+        <Image
           src={imageSrc}
           alt={imageAlt}
+          width={1200}
+          height={720}
           className="mx-auto mt-4 h-auto max-h-72 w-full max-w-3xl rounded-xl object-cover sm:max-h-[22rem]"
         />
       )}

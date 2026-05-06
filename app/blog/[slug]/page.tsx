@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const post = getPostBySlug(params.slug);
   if (!post) return {};
   return {
-    title: `${post.title} | Siyanda Njiki Holdings`,
+    title: `${post.title} | Syanda Njiki Holdings`,
     description: post.excerpt,
     keywords: post.tags,
     openGraph: { title: post.title, description: post.excerpt, images: [post.image] },

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: "Blog | Siyanda Njiki Holdings",
+  title: "Blog | Syanda Njiki Holdings",
   description: "Insights on electrical safety, construction trends, supply chain and transport.",
 };
 
@@ -15,7 +16,7 @@ export default function BlogPage() {
       <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <article key={post.slug} className="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200">
-            <img src={post.image} alt={post.title} className="h-44 w-full object-cover" />
+            <Image src={post.image} alt={post.title} width={800} height={352} className="h-44 w-full object-cover" />
             <div className="p-4 text-center">
               <p className="text-xs text-slate-500">{post.date} · {post.readingTime}</p>
               <h2 className="mt-2 text-lg font-semibold text-primary">{post.title}</h2>

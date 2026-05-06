@@ -1,6 +1,6 @@
-# Siyanda Njiki Holdings Website
+# Syanda Njiki Holdings Website
 
-Official marketing website for **Siyanda Njiki Holdings (PTY) LTD** built with Next.js (App Router), Tailwind CSS, and TypeScript.
+Official marketing website for **Syanda Njiki Holdings (PTY) LTD** built with Next.js (App Router), Tailwind CSS, and TypeScript.
 
 This README explains:
 - how to run the project

@@ -4,13 +4,13 @@ excerpt: "Why reliable procurement and inventory control drive business performa
 date: "2026-01-27"
 tags: ["supply chain", "procurement", "operations"]
 image: "/images/blog-supply-chain.png"
-author: "Siyanda Njiki Holdings"
+author: "Syanda Njiki Holdings"
 ---
 # Supply Chain Management
 
 For service businesses in South Africa, a strong supply chain is often the difference between delivering on schedule and missing key deadlines. Procurement delays, stock gaps, and poor vendor coordination can affect every part of a project lifecycle.
 
-At Siyanda Njiki Holdings, supply planning starts with understanding real site demand. Teams forecast materials by phase, verify supplier lead times, and maintain clear reorder points for critical items such as PPE, electrical components, and consumables.
+At Syanda Njiki Holdings, supply planning starts with understanding real site demand. Teams forecast materials by phase, verify supplier lead times, and maintain clear reorder points for critical items such as PPE, electrical components, and consumables.
 
 ## Core practices that improve supply performance
 

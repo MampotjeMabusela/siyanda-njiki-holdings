@@ -4,13 +4,13 @@ excerpt: "Key electrical safety practices that reduce outages and protect teams.
 date: "2026-03-12"
 tags: ["electrical safety", "maintenance", "compliance"]
 image: "/images/blog-electrical-safety.png"
-author: "Siyanda Njiki Holdings"
+author: "Syanda Njiki Holdings"
 ---
 # Electrical Safety Essentials
 
 South African industries continue to face pressure from aging infrastructure, weather-related disruptions, and increased demand on local networks. In this environment, electrical safety is not just a technical requirement - it is a business continuity strategy.
 
-At Siyanda Njiki Holdings, we focus on preventative maintenance before failures occur. This includes transformer inspections, substation cleaning schedules, thermal checks on switchgear, and routine testing of protection systems. Catching early signs of overheating or insulation damage helps clients avoid unplanned downtime and costly emergency repairs.
+At Syanda Njiki Holdings, we focus on preventative maintenance before failures occur. This includes transformer inspections, substation cleaning schedules, thermal checks on switchgear, and routine testing of protection systems. Catching early signs of overheating or insulation damage helps clients avoid unplanned downtime and costly emergency repairs.
 
 ## Practical priorities for facilities and sites
 

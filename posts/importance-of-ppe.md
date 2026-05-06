@@ -4,7 +4,7 @@ excerpt: "How quality PPE supports safety culture and compliance outcomes."
 date: "2025-11-10"
 tags: ["ppe", "safety", "workplace"]
 image: "/images/blog-ppe-safety.png"
-author: "Siyanda Njiki Holdings"
+author: "Syanda Njiki Holdings"
 ---
 # Why PPE Matters
 
@@ -23,4 +23,4 @@ PPE should be selected according to actual site hazards, not generic assumptions
 
 Workplace safety regulations in South Africa require employers to provide and maintain suitable protective equipment. Beyond compliance, organizations with strong PPE discipline experience fewer incidents, less downtime, and better workforce morale.
 
-At Siyanda Njiki Holdings, we view PPE as a practical investment in people and project continuity. Safe teams work more confidently, execute more consistently, and deliver higher-quality outcomes for clients.
+At Syanda Njiki Holdings, we view PPE as a practical investment in people and project continuity. Safe teams work more confidently, execute more consistently, and deliver higher-quality outcomes for clients.

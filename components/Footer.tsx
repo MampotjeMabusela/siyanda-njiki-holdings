@@ -9,12 +9,12 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <Image
             src="/images/snh-logo.png"
-            alt="Siyanda Njiki Holdings logo"
+            alt="Syanda Njiki Holdings logo"
             width={220}
             height={70}
             className="mb-3 h-14 w-auto object-contain"
           />
-          <h4 className="font-semibold">Siyanda Njiki Holdings</h4>
+          <h4 className="font-semibold">Syanda Njiki Holdings</h4>
           <p className="mt-2 text-sm text-slate-300">Building Tomorrow, Delivering Today</p>
         </div>
         <div className="flex flex-col items-center">
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-700 px-4 py-3 text-center text-xs text-slate-300">
-        © {new Date().getFullYear()} Siyanda Njiki Holdings (PTY) LTD. All rights reserved.
+        © {new Date().getFullYear()} Syanda Njiki Holdings (PTY) LTD. All rights reserved.
       </div>
     </footer>
   );
