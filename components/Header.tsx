@@ -25,7 +25,7 @@ export default function Header() {
             type="button"
             aria-label="Open menu"
             onClick={() => setOpen(true)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 md:hidden"
+            className="absolute left-0 top-1/2 -translate-y-1/2 rounded-md p-1 md:hidden"
           >
             <FaBars className="text-xl text-primary" />
           </button>
@@ -41,15 +41,10 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-        <div className="mt-4 hidden items-center justify-center gap-4 md:flex">
-          <Link href="/contact" className="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white">
-            Get a Quote
-          </Link>
-        </div>
       </div>
       {open && (
         <div className="fixed inset-0 z-50 bg-slate-900/70 md:hidden">
-          <aside className="ml-auto flex h-full w-72 flex-col bg-white p-5 shadow-xl">
+          <aside className="ml-auto flex h-full w-full max-w-xs flex-col bg-white p-5 shadow-xl">
             <button type="button" className="mb-4 self-start" onClick={() => setOpen(false)} aria-label="Close menu">
               <FaXmark className="text-2xl" />
             </button>
@@ -62,13 +57,6 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/contact"
-              onClick={() => setOpen(false)}
-              className="mt-6 rounded-full bg-secondary px-4 py-3 text-center text-sm font-semibold text-white"
-            >
-              Get a Quote
-            </Link>
           </aside>
         </div>
       )}

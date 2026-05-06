@@ -18,7 +18,7 @@
 
 html,
 body {
-  background: #f4f8fc;
+  background: #ffffff;
   color: #1f2937;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .glass {
-  background: rgba(244, 248, 252, 0.8);
+  background: rgba(255, 255, 255, 0.86);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }

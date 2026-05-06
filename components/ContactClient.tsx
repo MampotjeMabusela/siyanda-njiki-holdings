@@ -115,7 +115,7 @@ export default function ContactClient() {
           <p className="text-xs text-red-500">{errors.message?.message}</p>
           <button
             disabled={isSubmitting}
-            className="rounded-md bg-primary px-5 py-3 font-semibold text-white"
+            className="w-full rounded-md bg-primary px-5 py-3 font-semibold text-white sm:w-auto"
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>

@@ -53,11 +53,11 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="hero-business-bg absolute inset-0" aria-hidden />
         <div className="absolute inset-0 bg-slate-900/45" aria-hidden />
-        <div className="relative mx-auto max-w-7xl px-4 py-20 text-center md:py-24">
-          <h1 className="mx-auto text-4xl font-extrabold tracking-tight text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.65)] md:text-6xl">
+        <div className="relative mx-auto max-w-7xl px-4 py-14 text-center sm:py-16 md:py-24">
+          <h1 className="mx-auto text-3xl font-extrabold tracking-tight text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.65)] sm:text-4xl md:text-6xl">
             Siyanda Njiki Holdings (PTY) LTD
           </h1>
-          <p className="mt-3 text-lg font-semibold uppercase tracking-[0.2em] text-slate-100 drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
+          <p className="mt-3 text-sm font-semibold uppercase tracking-[0.12em] text-slate-100 drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)] sm:text-base md:text-lg md:tracking-[0.2em]">
             SNH • Building Tomorrow, Delivering Today
           </p>
           <p className="mt-4 text-base font-semibold text-slate-100 drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)] md:text-lg">

@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="mt-20 bg-primary text-slate-100">
-      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 text-center md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 text-center sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col items-center">
           <Image
             src="/images/snh-logo.png"
@@ -29,6 +29,12 @@ export default function Footer() {
           <h5 className="font-semibold">Contact</h5>
           <p className="mt-2 text-sm text-slate-300">+27 79 221 9330</p>
           <p className="text-sm text-slate-300">info.thegembeselectrical@gmail.com</p>
+          <Link
+            href="/contact"
+            className="mt-4 rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white"
+          >
+            Get a Quote
+          </Link>
         </div>
         <div className="flex flex-col items-center">
           <h5 className="font-semibold">Socials</h5>

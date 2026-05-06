@@ -23,7 +23,7 @@ module.exports = {
         primary: "#1B3F73",
         secondary: "#2F8EDB",
         accent: "#6B7280",
-        sitebg: "#F4F8FC",
+        sitebg: "#FFFFFF",
         sitetext: "#1F2937",
       },
     },
