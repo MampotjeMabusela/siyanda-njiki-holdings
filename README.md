@@ -165,9 +165,9 @@ Fix:
 Common cause: stale `.next` artifacts or wrong Tailwind content resolution.
 
 Project protections already in place:
-- Tailwind uses:
-  - `content.relative: true`
-  - `files: ["./app/**", "./components/**", "./lib/**"]`
+- `postcss.config.js` pins Tailwind to `tailwind.config.js` with `path.join(__dirname, ...)` so **npm workspaces** (running from the repo root) still compile utilities correctly.
+- `tailwind.config.js` uses **absolute content globs** from `__dirname` so scanning does not depend on shell `cwd`.
+- `app/layout.tsx` imports `./globals.css` first.
 - Dev script always cleans `.next` before start.
 
 Manual recovery:
